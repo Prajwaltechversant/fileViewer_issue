@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-documents/picker": "^10.1.1",
+    "@react-native-documents/viewer": "^1.0.0",
     "react": "19.0.0",
     "react-native": "0.78.0"
   },
