@@ -47,10 +47,12 @@ const App = () => {
         ],
         destination: 'documentDirectory',
       });
+if(localCopy.status ==='success'){
+  console.log('Picked file:', pickerResponse);
+  console.log('Local copy URI:', localCopy.sourceUri);
+  setFileURI(localCopy.localUri);  
+}
 
-      console.log('Picked file:', pickerResponse);
-      console.log('Local copy URI:', localCopy.sourceUri);
-      setFileURI(localCopy.sourceUri);
     } catch (err) {
       console.log('Error picking file:', err);
     }
